@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            text-align: center;
+        }
+            
+        form {
+            padding: 20px;
+            width: 404px;
+            height: 145px;
+            background-color: white;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <p>Choose the floor and ceiling of numbers to choose from, then click "Give me a number."</p>
+    <form id="generateRandomNumber">
+        Floor: <input type="number" id="numFloor"><br>
+        Ceiling: <input type="number" id="numCeiling"><br>
+        <input type="button" onclick="getValues()" value="Give me a number">
+    </form>
+
+    <script src="backend.js"></script>
+
+    <h3>Your number is: </h3>
+    <h3 id="displayNumber"></h3>
+
+</body>
+</html>
